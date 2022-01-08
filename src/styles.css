@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "buttons.scss";
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  [x-cloak] {
+    display: none !important;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center w-full px-8 py-2 text-base font-bold transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-gradient-to-r bg-origin-border;
+  }
+  .btn-brand-blue {
+    @apply text-white bg-brand-blue hover:bg-brand-blue-dark focus:outline-brand-blue border-white;
+  }
+  .form-input {
+    @apply block w-full px-4 py-3 rounded-md shadow-sm focus:ring-brand-blue focus:border-brand-blue border-gray-300 transition duration-150 ease-in-out;
+  }
+}
+
+.text-link {
+  @apply font-medium text-brand-blue hover:opacity-75 transition duration-150 ease-in-out;
+}

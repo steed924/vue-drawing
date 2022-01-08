@@ -1,0 +1,23 @@
+{
+  "name": "3dagora",
+  "version": "1.0.0",
+  "description": "New Theme",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Subtain Farooq",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.2",
+    "@tailwindcss/forms": "^0.3.4",
+    "live-server": "^1.2.1",
+    "public": "^0.1.5"
+  }
+}
